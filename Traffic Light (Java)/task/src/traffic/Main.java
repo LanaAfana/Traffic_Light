@@ -1,7 +1,9 @@
 package traffic;
 
 import java.io.IOException;
+import java.util.ArrayDeque;
 import java.util.InputMismatchException;
+import java.util.Queue;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -10,7 +12,7 @@ public class Main {
   static int interval;
   static Thread threadSystem;
   static State state;
-
+  static Queue<String> queueOfRoads = new ArrayDeque<>();
   static final String MENU = """
             Menu:
             1. Add
@@ -25,7 +27,22 @@ public class Main {
     SYSTEM
   }
 
+  static void addRoad(String name) {
+    if (queueOfRoads.size() < numberOfRoads) {
+      queueOfRoads.offer(name);
+      System.out.printf("%s added!%n", name);
+    } else {
+      System.out.println("Queue is full");
+    }
+  }
 
+  static void deleteRoad() {
+    if (queueOfRoads.isEmpty()) {
+      System.out.println("Queue is empty");
+    } else {
+      System.out.printf("%s deleted!%n", queueOfRoads.poll());
+    }
+  }
   static int inputData(String text) {
     boolean isNotQuit = true;
     int numberOf = 0;
@@ -71,6 +88,7 @@ public class Main {
           System.out.printf("! %ds. have passed since system startup !%n", count);
           System.out.printf("! Number of roads: %d !%n", numberOfRoads);
           System.out.printf("! Interval: %d !%n", interval);
+          queueOfRoads.forEach(System.out::println);
           System.out.println("! Press \"Enter\" to open menu !");
         }
       }
@@ -90,11 +108,15 @@ public class Main {
             isNotQuit = false;
           }
           case "1" -> {
-            System.out.println("Road added");
+            System.out.print("Input road name: ");
+            try (Scanner scnr = new Scanner(System.in)) {
+              String name = scnr.nextLine();
+              addRoad(name);
+            }
             pressEnter();
           }
           case "2" -> {
-            System.out.println("Road deleted");
+            deleteRoad();
             pressEnter();
           }
           case "3" -> {
