@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GlobalTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-09T07:48:29" hostname="192.168.0.41" time="0.316">
+<testsuite name="GlobalTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-09T12:31:06" hostname="MacBook-Pro-3.local" time="10.957">
   <properties/>
-  <testcase name="start" classname="GlobalTests" time="0.316"/>
+  <testcase name="start" classname="GlobalTests" time="10.957"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Welcome to the traffic management system!
 Input the number of roads: > 5
 Input the interval: > 3
 Menu:
-1. Add road
-2. Delete road
-3. Open system
+1. Add
+2. Delete
+3. System
 0. Quit
 
 > 0
@@ -21,18 +21,18 @@ Welcome to the traffic management system!
 Input the number of roads: > 5
 Input the interval: > 3
 Menu:
-1. Add road
-2. Delete road
-3. Open system
+1. Add
+2. Delete
+3. System
 0. Quit
 
 > 1
 Road added
 > 
 Menu:
-1. Add road
-2. Delete road
-3. Open system
+1. Add
+2. Delete
+3. System
 0. Quit
 
 > 0
@@ -43,44 +43,24 @@ Welcome to the traffic management system!
 Input the number of roads: > 5
 Input the interval: > 3
 Menu:
-1. Add road
-2. Delete road
-3. Open system
+1. Add
+2. Delete
+3. System
 0. Quit
 
 > 2
 Road deleted
 > 
 Menu:
-1. Add road
-2. Delete road
-3. Open system
+1. Add
+2. Delete
+3. System
 0. Quit
 
 > 0
 Bye!
 ?[1;31m
 Start test 4?[0m
-Welcome to the traffic management system!
-Input the number of roads: > 5
-Input the interval: > 3
-Menu:
-1. Add road
-2. Delete road
-3. Open system
-0. Quit
-
-> 3
-System opened
-> 
-Menu:
-1. Add road
-2. Delete road
-3. Open system
-0. Quit
-
-> 0
-Bye!
 ?[1;31m
 Start test 5?[0m
 Welcome to the traffic management system!
@@ -97,9 +77,9 @@ Error! Incorrect input. Try again: Input the interval: > 0
 Error! Incorrect input. Try again: Input the interval: > Hello world!
 Error! Incorrect input. Try again: Input the interval: > 5
 Menu:
-1. Add road
-2. Delete road
-3. Open system
+1. Add
+2. Delete
+3. System
 0. Quit
 
 > 0
@@ -110,71 +90,189 @@ Welcome to the traffic management system!
 Input the number of roads: > 5
 Input the interval: > 3
 Menu:
-1. Add road
-2. Delete road
-3. Open system
+1. Add
+2. Delete
+3. System
 0. Quit
 
 > asd
 Incorrect option
 > 
 Menu:
-1. Add road
-2. Delete road
-3. Open system
+1. Add
+2. Delete
+3. System
 0. Quit
 
 > -1
 Incorrect option
 > 
 Menu:
-1. Add road
-2. Delete road
-3. Open system
+1. Add
+2. Delete
+3. System
 0. Quit
 
 > 6-
 Incorrect option
 > 
 Menu:
-1. Add road
-2. Delete road
-3. Open system
+1. Add
+2. Delete
+3. System
 0. Quit
 
 > Hello world!
 Incorrect option
 > 
 Menu:
-1. Add road
-2. Delete road
-3. Open system
+1. Add
+2. Delete
+3. System
 0. Quit
 
 > 4
 Incorrect option
 > 
 Menu:
-1. Add road
-2. Delete road
-3. Open system
+1. Add
+2. Delete
+3. System
 0. Quit
 
 > 5
 Incorrect option
 > 
 Menu:
-1. Add road
-2. Delete road
-3. Open system
+1. Add
+2. Delete
+3. System
 0. Quit
 
 > 0
 Bye!
 ?[1;31m
 Start test 7?[0m
+Welcome to the traffic management system!
+Input the number of roads: > 1
+Input the interval: > 1
+Menu:
+1. Add
+2. Delete
+3. System
+0. Quit
+
+?[0;34m/127.0.0.1:59629 to /127.0.0.1:59628 workers Thread 2
+?[0m?[0;34mNotification Thread
+?[0m?[0;34mQueueThread
+?[0m?[0;34mTest worker
+?[0m?[0;34mReference Handler
+?[0m?[0;34m/127.0.0.1:59629 to /127.0.0.1:59628 workers
+?[0m?[0;34mmain
+?[0m?[0;34mMain
+?[0m?[0;34mCommon-Cleaner
+?[0m?[0;34mSignal Dispatcher
+?[0m?[0;34mFinalizer
+?[0m?[0;34m/127.0.0.1:59629 to /127.0.0.1:59628 workers Thread 3
+> 3
+! 1s. have passed since system startup !
+! Number of roads: 1 !
+! Interval: 1 !
+! Press "Enter" to open menu !
+! 2s. have passed since system startup !
+! Number of roads: 1 !
+! Interval: 1 !
+! Press "Enter" to open menu !
+! 3s. have passed since system startup !
+! Number of roads: 1 !
+! Interval: 1 !
+! Press "Enter" to open menu !
+! 4s. have passed since system startup !
+! Number of roads: 1 !
+! Interval: 1 !
+! Press "Enter" to open menu !
+> 
+Menu:
+1. Add
+2. Delete
+3. System
+0. Quit
+
+> 3
+! 5s. have passed since system startup !
+! Number of roads: 1 !
+! Interval: 1 !
+! Press "Enter" to open menu !
+> 
+Menu:
+1. Add
+2. Delete
+3. System
+0. Quit
+
+> 0
+Bye!
 ?[1;31m
 Start test 8?[0m
+Welcome to the traffic management system!
+Input the number of roads: > 24367587
+Input the interval: > 24367587
+Menu:
+1. Add
+2. Delete
+3. System
+0. Quit
+
+?[0;34m/127.0.0.1:59629 to /127.0.0.1:59628 workers Thread 2
+?[0m?[0;34mNotification Thread
+?[0m?[0;34mTest worker
+?[0m?[0;34mReference Handler
+?[0m?[0;34m/127.0.0.1:59629 to /127.0.0.1:59628 workers
+?[0m?[0;34mMain
+?[0m?[0;34mmain
+?[0m?[0;34mQueueThread
+?[0m?[0;34mCommon-Cleaner
+?[0m?[0;34mSignal Dispatcher
+?[0m?[0;34mFinalizer
+?[0m?[0;34m/127.0.0.1:59629 to /127.0.0.1:59628 workers Thread 3
+> 3
+! 1s. have passed since system startup !
+! Number of roads: 24367587 !
+! Interval: 24367587 !
+! Press "Enter" to open menu !
+! 2s. have passed since system startup !
+! Number of roads: 24367587 !
+! Interval: 24367587 !
+! Press "Enter" to open menu !
+! 3s. have passed since system startup !
+! Number of roads: 24367587 !
+! Interval: 24367587 !
+! Press "Enter" to open menu !
+! 4s. have passed since system startup !
+! Number of roads: 24367587 !
+! Interval: 24367587 !
+! Press "Enter" to open menu !
+> 
+Menu:
+1. Add
+2. Delete
+3. System
+0. Quit
+
+> 3
+! 5s. have passed since system startup !
+! Number of roads: 24367587 !
+! Interval: 24367587 !
+! Press "Enter" to open menu !
+> 
+Menu:
+1. Add
+2. Delete
+3. System
+0. Quit
+
+> 0
+Bye!
 ?[1;31m
 Start test 9?[0m
 ?[1;31m
@@ -196,5 +294,54 @@ Start test 17?[0m
 ?[1;31m
 Start test 18?[0m
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[E?[0;34mxception in thread "QueueThread" java.lang.RuntimeException: java.lang.InterruptedException: sleep interrupted
+?[0m?[0;34m	at traffic.Main.lambda$systemInfoThread$0(Main.java:66)
+?[0m?[0;34m	at java.base/java.lang.Thread.run(Thread.java:833)
+?[0m?[0;34mCaused by: java.lang.InterruptedException: sleep interrupted
+?[0m?[0;34m	at java.base/java.lang.Thread.sleep(Native Method)
+?[0m?[0;34m	at traffic.Main.lambda$systemInfoThread$0(Main.java:64)
+?[0m?[0;34m	... 1 more
+E?[0;34mxception in thread "QueueThread" java.lang.RuntimeException: java.lang.InterruptedException: sleep interrupted
+?[0m?[0;34m	at traffic.Main.lambda$systemInfoThread$0(Main.java:66)
+?[0m?[0;34m	at java.base/java.lang.Thread.run(Thread.java:833)
+?[0m?[0;34mCaused by: java.lang.InterruptedException: sleep interrupted
+?[0m?[0;34m	at java.base/java.lang.Thread.sleep(Native Method)
+?[0m?[0;34m	at traffic.Main.lambda$systemInfoThread$0(Main.java:64)
+?[0m?[0;34m	... 1 more
+E?[0;34mxception in thread "QueueThread" java.lang.RuntimeException: java.lang.InterruptedException: sleep interrupted
+?[0m?[0;34m	at traffic.Main.lambda$systemInfoThread$0(Main.java:66)
+?[0m?[0;34m	at java.base/java.lang.Thread.run(Thread.java:833)
+?[0m?[0;34mCaused by: java.lang.InterruptedException: sleep interrupted
+?[0m?[0;34m	at java.base/java.lang.Thread.sleep(Native Method)
+?[0m?[0;34m	at traffic.Main.lambda$systemInfoThread$0(Main.java:64)
+?[0m?[0;34m	... 1 more
+E?[0;34mxception in thread "QueueThread" java.lang.RuntimeException: java.lang.InterruptedException: sleep interrupted
+?[0m?[0;34m	at traffic.Main.lambda$systemInfoThread$0(Main.java:66)
+?[0m?[0;34m	at java.base/java.lang.Thread.run(Thread.java:833)
+?[0m?[0;34mCaused by: java.lang.InterruptedException: sleep interrupted
+?[0m?[0;34m	at java.base/java.lang.Thread.sleep(Native Method)
+?[0m?[0;34m	at traffic.Main.lambda$systemInfoThread$0(Main.java:64)
+?[0m?[0;34m	... 1 more
+E?[0;34mxception in thread "QueueThread" java.lang.RuntimeException: java.lang.InterruptedException: sleep interrupted
+?[0m?[0;34m	at traffic.Main.lambda$systemInfoThread$0(Main.java:66)
+?[0m?[0;34m	at java.base/java.lang.Thread.run(Thread.java:833)
+?[0m?[0;34mCaused by: java.lang.InterruptedException: sleep interrupted
+?[0m?[0;34m	at java.base/java.lang.Thread.sleep(Native Method)
+?[0m?[0;34m	at traffic.Main.lambda$systemInfoThread$0(Main.java:64)
+?[0m?[0;34m	... 1 more
+Exception in thread "QueueThread" java.lang.RuntimeException: java.lang.InterruptedException: sleep interrupted
+	at traffic.Main.lambda$systemInfoThread$0(Main.java:66)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at traffic.Main.lambda$systemInfoThread$0(Main.java:64)
+	... 1 more
+Exception in thread "QueueThread" java.lang.RuntimeException: java.lang.InterruptedException: sleep interrupted
+	at traffic.Main.lambda$systemInfoThread$0(Main.java:66)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at traffic.Main.lambda$systemInfoThread$0(Main.java:64)
+	... 1 more
+]]></system-err>
 </testsuite>

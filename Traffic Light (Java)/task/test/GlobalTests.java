@@ -11,7 +11,7 @@ import java.util.List;
 
 public class GlobalTests extends StageTest {
 
-  int STAGE = 3;
+  int STAGE = 4;
   String name = "n3w_v3ry_unu5u4l_r04d_n4m3_";
 
   public void ForStages(int[] stages) {
@@ -100,6 +100,7 @@ public class GlobalTests extends StageTest {
   public static Thread GetUsersThreadByName(String threadName) {
     Thread usersThread = null;
     for (Thread t : Thread.getAllStackTraces().keySet()) {
+      System.out.println(t.getName());
       if (t.getName().equals(threadName))
         usersThread = t;
     }
@@ -137,14 +138,14 @@ public class GlobalTests extends StageTest {
       e.printStackTrace();
     }
     String addOutput = pr.getOutput().toLowerCase();
-    return output+addOutput;
+    return output + addOutput;
   }
 
   public List<String> GetSystemOutputInSeconds(TestedProgram pr, int seconds) {
     String output = AwaitOutputAtStart(pr);
     if (seconds > 1) {
       try {
-        Thread.sleep(1050 * (seconds-1));
+        Thread.sleep(1050 * (seconds - 1));
       } catch (InterruptedException e) {
         e.printStackTrace();
       }
